@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg14"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các loại trò chơi xổ số"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:shadowRadius="5"
+            android:shadowColor="#FFD600"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 1"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:contentDescription="@string/button14"/>
+
+            <TextView
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 2"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:contentDescription="@string/button14"/>
+
+            <TextView
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 3"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/button14"/>
+
+            <TextView
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 4"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/button14"/>
+
+            <TextView
+                android:id="@+id/btn5"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 5"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/button14"/>
+
+            <TextView
+                android:id="@+id/btn6"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:text="LOẠI 6"
+                android:textColor="@color/white"
+                android:background="@drawable/tabbar1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:shadowColor="#FFD600"
+                android:shadowRadius="5"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/button14"/>
+        </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="8 cách khác nhau để chọn số xổ số của bạn"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:shadowRadius="5"
+                android:shadowColor="#FFD600"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnP"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/terms_and_policy"
+            android:textSize="12dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/tabbar1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="#FFD600"
+            android:shadowRadius="5"
+            android:textColor="@color/white"
+            android:contentDescription="@string/button14"/>
+
+        <ImageView
+            android:id="@+id/nxt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_arrow_circle_right"
+            android:layout_gravity="end"
+            android:backgroundTint="#DAFFD600"
+            android:contentDescription="@string/button_next"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
